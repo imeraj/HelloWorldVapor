@@ -9,6 +9,10 @@ drop.get { req in
     ])
 }
 
+drop.get("/hello") { req in
+	return "Hello Meraj!"
+}
+
 drop.resource("posts", PostController())
 
 drop.run()
